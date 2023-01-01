@@ -1,0 +1,9 @@
+
+1. For sequential execution
+	nvc++ -o main main.cpp CGSolver.cpp   
+2. For parallel multicore execution
+	nvc++ -ta=multicore -Minfo=accel -o main main.cpp CGSolver.cpp
+3. For parallel GPU execution with managed memory
+	nvc++ -ta=tesla:managed -Minfo=accel -o main main.cpp CGSolver.cpp
+4. For parallel GPU execution without managed memory 
+	nvc++ -ta=tesla -Minfo=accel -o main main.cpp CGSolver.cpp
