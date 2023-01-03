@@ -7,3 +7,5 @@
 	nvc++ -ta=tesla:managed -Minfo=accel -o main main.cpp CGSolver.cpp
 4. For parallel GPU execution without managed memory 
 	nvc++ -ta=tesla -Minfo=accel -o main main.cpp CGSolver.cpp
+	
+	
